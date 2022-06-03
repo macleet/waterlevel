@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 90px;
+  font-family: Inter, Arial, sans-serif;
+}
+
+#banner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 100px;
+  
+  background-color: rgb(66, 145, 152);
+  
+  font-weight: bold;
+  font-size: 28px;
+  color: whitesmoke;
+}
+
+#text-area {
+  margin-top: -16px;
+  margin-right: 15px;
+  max-width: 50%;
+  font-size: 16px;
+}
+
+a:link {
+  color: rgb(66, 145, 152);
+  background-color: transparent;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(166, 115, 162);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(66, 145, 152);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+p#text-area {
+  max-height: 300px;
+}
+
+#expand-button {
+  background-color: rgb(66, 145, 152);
+  padding: 10px 50px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: solid rgb(66, 145, 152);
+  color: whitesmoke;
+  min-width: 200px;
+}
+
+#image-area {
+  display: flex;
+  flex-flow: column;
+  margin-left: 15px;
+  width: 25%;
+  font-size: 12px;
+}
+
+img { 
+/*   wview: ;: 100%; */
+/*   wview: 100%; */
+  width: 100%;
+  height: auto;
+}
+
+#expand-area {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+}
+
+#myChart {
+  height: 340px;
+  width: 600px;
+}
+
+#chart-container {
+  position: relative;
+  height: 40vh;
+  width: 40vw;
+}
+
+#calendar {
+  height: 500px;
+  width: 550px;
+}
+
+div.month-year-picker {
+  font-weight: 600;
+  color: rgb(40,130,255);
+}
+
+@media screen and (max-width:600px) { /*changed from 480px*/
+  #calendar-text {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media screen and (max-width:900px) {
+  #main-area {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+
+  #expand-button {
+    min-width: 150px;
+  }
+
+  #banner {
+    text-align: center;
+    padding-left: 0px;  
+  }
+
+  #image-area {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #text-area {
+    width: 70%;
+    margin-top: 0px;
+    margin-left: 15%;
+    margin-right: 15%;
+    max-width: none;
+    margin-bottom: 65px;
+  }
+  
+  #expand-area {
+    display: flex;
+    flex-direction: column-reverse;
+/*     width: 70%; */
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: -25px;
+  }
+
+  #calendar-text {
+/*     width: 70%; */
+/*     margin-left: 10%;
+    margin-right: 10%; */
+  }
+
+  #calendar {
+    margin-bottom: 30px;
+  }
+
+  div.month-year-picker {
+    margin-top: 30px;
+  }
+
+  #chart-container {
+    height: 40vh;
+    width: 77vw;
+  }
+}
